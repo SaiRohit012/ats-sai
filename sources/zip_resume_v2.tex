@@ -1,0 +1,118 @@
+\documentclass[10.5pt]{article}
+\usepackage[top=0.55in, bottom=0.55in, left=0.65in, right=0.65in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\titlerule\vspace{-4pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-1pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \small #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{2pt}\item
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & \small #2 \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{SAI ROHIT SHAIK}} \\[3pt]
+\small +91-6301411795 $\cdot$
+\href{mailto:sai.rohit.shaik@gmail.com}{sai.rohit.shaik@gmail.com} $\cdot$
+\href{https://linkedin.com/in/sk-sai-rohit}{linkedin.com/in/sk-sai-rohit} $\cdot$
+Hyderabad, India
+\end{center}
+\vspace{-8pt}
+
+\section{Summary}
+\small Software Engineer with expertise in \textbf{Java, Spring Boot, distributed systems, and SQL}. Experienced across enterprise backend development, fraud analytics, and scalable system design, with a track record of delivering measurable engineering and business impact.
+\vspace{-4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{BITS Pilani, Hyderabad Campus}{2024 -- 2026}{M.E. Computer Science}{CGPA: 8.53}
+  \resumeSubheading{IIT Madras}{2022 -- 2024}{Foundation in Data Science and Programming}{CGPA: 5.75}
+  \resumeSubheading{Sharda University}{2020 -- 2024}{B.Tech. Computer Science Engineering}{CGPA: 7.97}
+  \resumeProjectHeading{\textit{Teaching Assistant (OS \& Algorithms) \& Jr. Placement Coordinator, BITS Pilani}}{2024 -- 2025}
+\resumeSubHeadingListEnd
+\vspace{-6pt}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Software Engineer -- Redwood Software Pvt. Ltd., India}{Aug 2026 -- Present}{Java, Spring Boot, Playwright, Cypress, SOAP, Cucumber}{}
+  \resumeItemListStart
+    \resumeItem{Contributing to \textbf{Tidal Workload Automation} across its \textbf{5-layer distributed architecture} (Client, Manager, Master, Agent, Adapter) for feature and core component development.}
+    \resumeItem{Developing \textbf{Java/Spring Boot components} for the \textbf{2027.1 release}, working on core services and distributed job-execution workflows while maintaining enterprise compatibility.}
+    \resumeItem{Built \textbf{end-to-end test automation} with \textbf{Playwright, Cypress, SOAP, and Cucumber} across UI, service, integration, and workload-execution scenarios; drove defect resolution via cross-component debugging while transitioning ownership from the 2026.4 to 2027.1 release.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Analyst Intern -- Fraud Analytics, HSBC India}{Jan 2026 -- Present}{Python, SQL, BigQuery, Machine Learning, Scikit-learn, Agile}{}
+  \resumeItemListStart
+    \resumeItem{Developed \textbf{ML-powered fraud detection and classification models} using Python and Scikit-learn for vendor scoring and complaint triage, improving risk-identification accuracy by \textbf{18\%}.}
+    \resumeItem{Analyzed fraud datasets via \textbf{SQL on BigQuery}; debugged \textbf{15+ production incidents} through structured root-cause analysis, improving system observability.}
+    \resumeItem{Engineered \textbf{automated data validation pipelines}, cutting manual effort by \textbf{40\%} across fraud analytics workflows.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Software Engineer Intern -- Backend Systems, Codinoverse}{Feb -- Apr 2024}{Java, Scala, Apache Kafka, Microservices, REST APIs}{}
+  \resumeItemListStart
+    \resumeItem{Architected \textbf{event-driven microservices} in Java/Scala with Apache Kafka, improving backend scalability and fault tolerance.}
+    \resumeItem{Optimized \textbf{REST APIs and backend services}, reducing API response latency by \textbf{30\%}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6pt}
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{PayFlow -- UPI-Style Payments Backend} $|$ \emph{Java, Spring Boot, MySQL, REST APIs, JWT, JUnit}}{2025}
+  \resumeItemListStart
+    \resumeItem{Engineered a \textbf{Spring Boot REST API} simulating UPI-style payments with account management, fund transfers, and transaction history; secured with \textbf{JWT authentication}.}
+    \resumeItem{Implemented \textbf{optimistic locking and DB transactions} in MySQL to prevent double-spend race conditions; validated with \textbf{JUnit integration tests} and OpenAPI documentation.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{Distributed Key-Value Store} $|$ \emph{Java, gRPC, Consistent Hashing, Docker Compose}}{2025}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{distributed key-value store} in Java with a \textbf{consistent hash ring} for data partitioning and \textbf{quorum-based replication} for fault tolerance.}
+    \resumeItem{Designed \textbf{gRPC inter-node communication} with gossip-based failure detection; containerized the cluster with \textbf{Docker Compose} for multi-node testing.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{Financial Fraud Signal Dashboard} $|$ \emph{Python, BigQuery, SQL, Apache Airflow, GCP, Looker Studio}}{Jan -- Mar 2025}
+  \resumeItemListStart
+    \resumeItem{Designed an \textbf{end-to-end fraud analytics pipeline} (Python, Apache Airflow, BigQuery) with \textbf{Looker Studio} dashboards; reduced anomaly detection latency by an estimated \textbf{45\%} and improved data validation coverage to \textbf{$>$95\%}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+\small
+\begin{tabular*}{\textwidth}{@{}p{0.5\textwidth}p{0.48\textwidth}@{}}
+\textbf{Languages:} Java, Python, SQL, Scala, C++ & \textbf{Backend:} Spring Boot, Microservices, REST, gRPC \\[3pt]
+\textbf{Data \& ML:} BigQuery, Airflow, ML, sklearn & \textbf{Cloud:} AWS, GCP, DynamoDB, Docker \\[3pt]
+\textbf{Testing:} JUnit, Playwright, Cypress & \textbf{Practices:} Agile/Scrum, CI/CD, Root-Cause Analysis \\
+\end{tabular*}
+
+\end{document}

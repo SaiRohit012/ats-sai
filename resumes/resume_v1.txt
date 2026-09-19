@@ -1,0 +1,65 @@
+           SAI ROHIT SHAIK
+
+         +91-6301411795 | h20240158@hyderabad.bits-pilani.ac.in | Hyderabad / Bengaluru, India
+                              linkedin.com/in/sk-sai-rohit | github.com/sairohitsk
+
+Education
+BITS Pilani, Hyderabad Campus                                                      2024 – 2026
+M.E. Computer Science | CGPA: 8.53
+IIT Madras                                                                           2022 – 2024
+Foundation in Data Science and Programming | CGPA: 5.75
+Sharda University                                                                     2020 – 2024
+B.Tech. Computer Science Engineering | CGPA: 7.97
+
+Technical Skills
+
+Languages: Java, Python, SQL, Scala, C++, JavaScript
+Backend & systems: Spring Boot, REST APIs, Microservices, Distributed Systems, Akka, gRPC,
+Event-Driven Architecture
+Data & databases: BigQuery, Apache Airflow, Apache Kafka, ETL, MySQL, DynamoDB, NoSQL
+Analytics: Fraud Analytics, Anomaly Detection, Data Validation, Looker Studio
+Cloud & tools: AWS (Lambda, S3, CloudWatch, Lex), GCP, Docker, Git, Azure
+Testing & practices: JUnit, Playwright, Cypress, SOAP, Cucumber, CI/CD, Agile/Scrum, Root-Cause
+Analysis, Monitoring, Cross-Functional Collaboration
+
+Experience
+
+Redwood Software Pvt. Ltd.                                          Aug 2026 – Present
+Software Engineer | India
+
+• Develop Java/Spring Boot components for Tidal’s 5-layer architecture, supporting distributed job execution.
+• Automate UI, service, integration and workload tests using Playwright, Cypress, SOAP and Cucumber.
+• Resolve cross-component defects with root-cause analysis and regression tests for the 2027.1 release.
+
+HSBC                                                                      Jan 2026 – Jul 2026
+Analyst Intern – UK Fraud Analytics | India
+
+• Evaluated fraud scores across 3+ typologies with BigQuery SQL; found 0% incremental lift, avoiding an
+   estimated $200K+ investment.
+• Validated fraud-reduction claims across 5M+ transactions using BigQuery SQL and before/after KPI
+   baselines.
+• Built a Python classifier for 10K+ monthly complaints, targeting 60%+ less manual triage.
+
+Codinoverse                                                            Feb 2024 – Apr 2024
+Software Engineer Intern – Backend & Distributed Systems | India
+
+• Built 5+ Java, Scala and Akka microservices using object-oriented design patterns.
+• Integrated Kafka event pipelines with REST APIs, reducing incident detection time by an estimated 40%.
+• Validated services with JUnit tests, achieving >90% unit-test coverage.
+
+Projects
+
+PayFlow – UPI-Style Payments Backend                                                    2025
+Java, Spring Boot, MySQL, REST APIs, JWT
+
+• Built a simulated UPI backend to manage accounts, transfers and transaction history.
+• Implemented Spring Boot APIs with JWT security, MySQL transactions and optimistic locking.
+• Validated concurrent transfers with JUnit integration tests to prevent double-spend races.
+
+Distributed Key-Value Store                                                                2025
+Java, gRPC, Consistent Hashing, Docker Compose
+
+• Built a distributed key-value store to preserve data availability during node failures.
+• Implemented Java/gRPC services with consistent hashing, quorum replication and gossip-based failure
+   detection.
+• Validated availability during node failures while quorum held; documented recovery behavior.

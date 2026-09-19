@@ -1,0 +1,539 @@
+{
+  "version": "v1",
+  "name": "SAI ROHIT SHAIK",
+  "email": "h20240158@hyderabad.bits-pilani.ac.in",
+  "phone": "+91-6301411795",
+  "linkedin": "linkedin.com/in/sk-sai-rohit",
+  "github": "github.com/sairohitsk",
+  "location": "Hyderabad / Bengaluru, India",
+  "summary": "Software engineer focused on Java/Spring Boot, distributed systems and fraud analytics using Python, SQL and BigQuery.",
+  "education": [
+    {
+      "institution": "BITS Pilani, Hyderabad Campus",
+      "dates": "2024 -- 2026",
+      "credential": "M.E. Computer Science",
+      "grade": "CGPA: 8.53"
+    },
+    {
+      "institution": "IIT Madras",
+      "dates": "2022 -- 2024",
+      "credential": "Foundation in Data Science and Programming",
+      "grade": "CGPA: 5.75"
+    },
+    {
+      "institution": "Sharda University",
+      "dates": "2020 -- 2024",
+      "credential": "B.Tech. Computer Science Engineering",
+      "grade": "CGPA: 7.97"
+    }
+  ],
+  "experience": [
+    {
+      "id": "e1",
+      "company": "Redwood Software Pvt. Ltd.",
+      "title": "Software Engineer",
+      "dates": "Aug 2026 -- Present",
+      "location": "India",
+      "technologies": "Java, Spring Boot, Playwright, Cypress, SOAP, Cucumber",
+      "bullets": [
+        {
+          "id": "v1-e1-b1",
+          "text": "Develop Java/Spring Boot components for Tidal's 5-layer architecture, supporting distributed job execution."
+        },
+        {
+          "id": "v1-e1-b2",
+          "text": "Automate UI, service, integration and workload tests using Playwright, Cypress, SOAP and Cucumber."
+        },
+        {
+          "id": "v1-e1-b3",
+          "text": "Resolve cross-component defects with root-cause analysis and regression tests for the 2027.1 release."
+        }
+      ],
+      "metric_kind": "scope",
+      "metric_note": "5 architecture layers quantifies work scope. No measured performance/quality improvement was supplied; release numbers are not impact metrics.",
+      "source_bullets": [
+        {
+          "id": "v1-e1-b1",
+          "text": "Contribute to Tidal Workload Automation across its five-layer architecture: Client, Manager, Master, Agent and Adapter.",
+          "source_text": "Contributing to Tidal Workload Automation, working across its 5-layer distributed architecture -- Client, Manager, Master, Agent, and Adapter -- for feature development and core component engineering."
+        },
+        {
+          "id": "v1-e1-b2",
+          "text": "Develop Java/Spring Boot components and distributed job-execution workflows for the 2027.1 release, maintaining compatibility with existing enterprise functionality.",
+          "source_text": "Developing and enhancing Java/Spring Boot components for the 2027.1 release, working across core services and distributed job-execution workflows while maintaining compatibility with existing enterprise functionality."
+        },
+        {
+          "id": "v1-e1-b3",
+          "text": "Build Playwright, Cypress, SOAP and Cucumber tests across UI, services, integrations and workload execution.",
+          "source_text": "Engineering end-to-end test automation using Playwright, Cypress, SOAP, and Cucumber, covering UI, service, integration, and workload-execution scenarios across multiple Tidal components."
+        },
+        {
+          "id": "v1-e1-b4",
+          "text": "Debug cross-component defects and validate regressions while transitioning from the 2026.4 to 2027.1 release.",
+          "source_text": "Driving product sustainability and defect resolution through cross-component debugging, root-cause analysis, and regression validation while shadowing the 2026.4 release and transitioning ownership toward 2027.1."
+        }
+      ],
+      "metric_bullet_ids": [
+        "v1-e1-b1"
+      ]
+    },
+    {
+      "id": "e2",
+      "company": "HSBC",
+      "title": "Analyst Intern -- UK Fraud Analytics",
+      "dates": "Jan 2026 -- Jul 2026",
+      "location": "India",
+      "technologies": "Python, SQL, Google BigQuery, Agile/Scrum",
+      "bullets": [
+        {
+          "id": "v1-e2-b1",
+          "text": "Evaluated fraud scores across 3+ typologies with BigQuery SQL; found 0% incremental lift, avoiding an estimated $200K+ investment."
+        },
+        {
+          "id": "v1-e2-b2",
+          "text": "Validated fraud-reduction claims across 5M+ transactions using BigQuery SQL and before/after KPI baselines."
+        },
+        {
+          "id": "v1-e2-b3",
+          "text": "Built a Python classifier for 10K+ monthly complaints, targeting 60%+ less manual triage."
+        },
+        {
+          "id": "v1-e2-b4",
+          "text": "Developed Python/Scikit-learn fraud-classification models for vendor scoring and complaint triage, improving risk-identification accuracy by 18%."
+        },
+        {
+          "id": "v1-e2-b5",
+          "text": "Analyzed fraud data using BigQuery SQL and investigated 15+ production incidents through structured root-cause analysis."
+        },
+        {
+          "id": "v1-e2-b6",
+          "text": "Automated data-validation pipelines, reducing manual effort by 40% across fraud-analytics workflows."
+        }
+      ],
+      "metric_kind": "outcome",
+      "metric_note": "HSBC achievement sets were confirmed by the user; estimates and targets remain qualified.",
+      "source_bullets": [
+        {
+          "id": "v1-e2-b1",
+          "text": "Evaluated vendor fraud scores across 3+ typologies using BigQuery SQL; found 0% incremental lift, preventing an estimated $200K+ misdirected investment.",
+          "source_text": "Evaluated vendor fraud scores across 3+ fraud typologies using complex SQL on BigQuery; delivered analytical report confirming 0% incremental lift, preventing an estimated $200K+ misdirected investment in the UK Cards portfolio."
+        },
+        {
+          "id": "v1-e2-b2",
+          "text": "Validated fraud-reduction claims across 5M+ transactions using multi-join SQL and KPI baselines for before-and-after impact measurement.",
+          "source_text": "Validated fraud reduction claims via multi-join SQL across 5M+ transactions; built KPI baselines enabling rigorous before-vs-after impact measurement across authentication and fraud metrics."
+        },
+        {
+          "id": "v1-e2-b3",
+          "text": "Built a Python text-classification pipeline for 10K+ monthly complaints, targeting 60%+ less manual triage.",
+          "source_text": "Built Python ML text classification pipeline using topic modelling to auto-categorize 10K+ monthly complaints, targeting 60%+ reduction in manual triaging and improving regulatory reporting accuracy."
+        },
+        {
+          "id": "v1-e2-b4",
+          "text": "Developed Python/Scikit-learn fraud-classification models for vendor scoring and complaint triage, improving risk-identification accuracy by 18%.",
+          "source_text": "Developed ML-powered fraud detection and classification models using Python and Scikit-learn for vendor scoring and complaint triage, improving risk-identification accuracy by 18%."
+        },
+        {
+          "id": "v1-e2-b5",
+          "text": "Analyzed fraud data using BigQuery SQL and investigated 15+ production incidents through structured root-cause analysis.",
+          "source_text": "Analyzed fraud datasets via SQL on BigQuery; debugged 15+ production incidents through structured root-cause analysis, improving system observability."
+        },
+        {
+          "id": "v1-e2-b6",
+          "text": "Automated data-validation pipelines, reducing manual effort by 40% across fraud-analytics workflows.",
+          "source_text": "Engineered automated data validation pipelines, cutting manual effort by 40% across fraud analytics workflows."
+        }
+      ],
+      "metric_bullet_ids": [
+        "v1-e2-b1",
+        "v1-e2-b2",
+        "v1-e2-b3",
+        "v1-e2-b4",
+        "v1-e2-b5",
+        "v1-e2-b6"
+      ]
+    },
+    {
+      "id": "e3",
+      "company": "Codinoverse",
+      "title": "Software Engineer Intern -- Backend & Distributed Systems",
+      "dates": "Feb 2024 -- Apr 2024",
+      "location": "India",
+      "technologies": "Java, Scala, Akka, Apache Kafka, REST APIs, JUnit",
+      "bullets": [
+        {
+          "id": "v1-e3-b1",
+          "text": "Built 5+ Java, Scala and Akka microservices using object-oriented design patterns."
+        },
+        {
+          "id": "v1-e3-b2",
+          "text": "Integrated Kafka event pipelines with REST APIs, reducing incident detection time by an estimated 40%."
+        },
+        {
+          "id": "v1-e3-b3",
+          "text": "Validated services with JUnit tests, achieving >90% unit-test coverage."
+        }
+      ],
+      "metric_kind": "outcome",
+      "metric_note": "Quantitative claims retained from the corresponding supplied resume version.",
+      "source_bullets": [
+        {
+          "id": "v1-e3-b1",
+          "text": "Built 5+ Java, Scala and Akka microservices with >90% unit-test coverage, applying object-oriented design patterns.",
+          "source_text": "Architected 5+ distributed microservices in Java, Scala, and Akka with >90% unit test coverage; applied OOP design patterns for a scalable, production-ready service foundation."
+        },
+        {
+          "id": "v1-e3-b2",
+          "text": "Built Kafka event pipelines with REST API integration, reducing incident detection time by an estimated 40%.",
+          "source_text": "Built event-driven pipelines using Apache Kafka with REST API integration; enhanced root-cause analysis capabilities, reducing mean-time-to-detect incidents by an estimated 40%."
+        }
+      ],
+      "metric_bullet_ids": [
+        "v1-e3-b1",
+        "v1-e3-b2",
+        "v1-e3-b3"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Financial Fraud Signal Dashboard",
+      "technologies": "Python, BigQuery, SQL, Airflow, GCP, Looker Studio",
+      "dates": "Jan -- Mar 2025",
+      "bullets": [
+        {
+          "id": "v1-p1-b1",
+          "text": "Built a fraud-signal dashboard to surface transaction anomalies for risk and compliance decisions.",
+          "kind": "problem"
+        },
+        {
+          "id": "v1-p1-b2",
+          "text": "Built Python/Airflow ETL into BigQuery and Looker Studio dashboards with GCP monitoring.",
+          "kind": "implementation"
+        },
+        {
+          "id": "v1-p1-b3",
+          "text": "Reduced detection latency by an estimated 45%; achieved >95% data-validation coverage.",
+          "kind": "outcome"
+        }
+      ],
+      "source_bullets": [
+        {
+          "id": "v1-p1-b1",
+          "text": "Built a fraud-analytics pipeline with Python, Airflow and BigQuery, surfacing anomalies through Looker Studio dashboards.",
+          "source_text": "Designed an end-to-end fraud analytics pipeline surfacing real-time anomalies from large-scale operational datasets, enabling faster risk and compliance decisions across business units."
+        },
+        {
+          "id": "v1-p1-b2",
+          "text": "Integrated ETL orchestration, complex SQL joins and GCP monitoring for data validation and observability.",
+          "source_text": "Implemented using Python + Apache Airflow for ETL orchestration, BigQuery for complex joins and aggregations, and Looker Studio for KPI dashboards with GCP monitoring for observability."
+        },
+        {
+          "id": "v1-p1-b3",
+          "text": "Reduced anomaly-detection latency by 45%; dashboards served 3 teams, with >95% validation coverage across pipeline stages.",
+          "source_text": "Reduced anomaly detection latency by 45%; dashboards adopted by 3 cross-functional teams with data validation coverage improved to >95% across all pipeline stages."
+        }
+      ],
+      "metric_kind": "outcome",
+      "metric_bullet_ids": [
+        "v1-p1-b3"
+      ],
+      "metric_note": "Outcome measurements are from the supplied source resumes; retain estimates."
+    },
+    {
+      "id": "p2",
+      "title": "CampusBuddy -- Scalable Cloud Chatbot",
+      "technologies": "Java, AWS Lambda, DynamoDB, CloudWatch, Amazon Lex",
+      "dates": "Feb -- Mar 2025",
+      "bullets": [
+        {
+          "id": "v1-p2-b1",
+          "text": "Built a campus-information chatbot to automate routine queries using 3-language NLP.",
+          "kind": "problem"
+        },
+        {
+          "id": "v1-p2-b2",
+          "text": "Implemented Amazon Lex, Lambda and DynamoDB with REST APIs, JWT authentication and CloudWatch.",
+          "kind": "implementation"
+        },
+        {
+          "id": "v1-p2-b3",
+          "text": "Achieved <200ms latency and reduced operational overhead by 30%.",
+          "kind": "outcome"
+        }
+      ],
+      "source_bullets": [
+        {
+          "id": "v1-p2-b1",
+          "text": "Engineered a serverless backend on AWS Lambda + DynamoDB handling high-concurrency sessions via REST API and JWT auth; integrated microservices architecture with 3-language NLP via Amazon Lex."
+        },
+        {
+          "id": "v1-p2-b2",
+          "text": "Deployed CloudWatch monitoring and alerting for production observability; achieved <200ms latency, zero cold-start failures, and 30% reduction in operational overhead through process optimization."
+        }
+      ],
+      "metric_kind": "outcome",
+      "metric_bullet_ids": [
+        "v1-p2-b3"
+      ],
+      "metric_note": "Outcome measurements are from the supplied source resumes; retain estimates."
+    },
+    {
+      "id": "p3",
+      "title": "Distributed Task Scheduler",
+      "technologies": "C++, POSIX Threads, Mutexes, Futures/Promises",
+      "dates": "Aug -- Sep 2024",
+      "bullets": [
+        {
+          "id": "v1-p3-b1",
+          "text": "Built a concurrent C++ scheduler to prioritize tasks and coordinate asynchronous execution.",
+          "kind": "problem"
+        },
+        {
+          "id": "v1-p3-b2",
+          "text": "Implemented a resizable POSIX thread pool, mutex-based synchronization, futures/promises and task cancellation.",
+          "kind": "implementation"
+        },
+        {
+          "id": "v1-p3-b3",
+          "text": "Improved estimated throughput by 35%; observed zero race conditions during full-load testing.",
+          "kind": "outcome"
+        }
+      ],
+      "source_bullets": [
+        {
+          "id": "v1-p3-b1",
+          "text": "Built a C++ concurrent task scheduling library over a dynamic worker thread pool; implemented priority-based scheduling with async execution via futures/promises and thread safety via mutexes."
+        },
+        {
+          "id": "v1-p3-b2",
+          "text": "Enabled dynamic thread pool resizing and task cancellation; achieved zero race conditions at full load and improved estimated throughput by 35% -- validating scalable distributed systems design."
+        }
+      ],
+      "metric_kind": "outcome",
+      "metric_bullet_ids": [
+        "v1-p3-b3"
+      ],
+      "metric_note": "Outcome measurements are from the supplied source resumes; retain estimates."
+    },
+    {
+      "id": "p4",
+      "title": "Distributed Key-Value Store",
+      "technologies": "Java, gRPC, Consistent Hashing, Docker Compose",
+      "dates": "2025",
+      "bullets": [
+        {
+          "id": "v1-p4-b1",
+          "text": "Built a distributed key-value store to preserve data availability during node failures.",
+          "kind": "problem"
+        },
+        {
+          "id": "v1-p4-b2",
+          "text": "Implemented Java/gRPC services with consistent hashing, quorum replication and gossip-based failure detection.",
+          "kind": "implementation"
+        },
+        {
+          "id": "v1-p4-b3",
+          "text": "Validated availability during node failures while quorum held; documented recovery behavior.",
+          "kind": "outcome"
+        }
+      ],
+      "source_bullets": [
+        {
+          "id": "v1-p4-b1",
+          "text": "Built a distributed key-value store in Java implementing a consistent hash ring for data partitioning across nodes; supports quorum-based replication (read/write quorums) for fault tolerance."
+        },
+        {
+          "id": "v1-p4-b2",
+          "text": "Designed gRPC-based inter-node communication with a gossip protocol for membership and failure detection; containerised the full cluster using Docker Compose for local multi-node testing."
+        },
+        {
+          "id": "v1-p4-b3",
+          "text": "Validated correctness under node failure scenarios -- data remains accessible as long as quorum is maintained; documented replication lag and recovery behaviour in the README."
+        }
+      ],
+      "metric_kind": "missing",
+      "metric_bullet_ids": [],
+      "metric_note": "No numerical outcome measurement supplied. Correctness outcomes are retained; add real benchmarks when available."
+    },
+    {
+      "id": "p5",
+      "title": "PayFlow -- UPI-Style Payments Backend",
+      "technologies": "Java, Spring Boot, MySQL, REST APIs, JWT",
+      "dates": "2025",
+      "bullets": [
+        {
+          "id": "v1-p5-b1",
+          "text": "Built a simulated UPI backend to manage accounts, transfers and transaction history.",
+          "kind": "problem"
+        },
+        {
+          "id": "v1-p5-b2",
+          "text": "Implemented Spring Boot APIs with JWT security, MySQL transactions and optimistic locking.",
+          "kind": "implementation"
+        },
+        {
+          "id": "v1-p5-b3",
+          "text": "Validated concurrent transfers with JUnit integration tests to prevent double-spend races.",
+          "kind": "outcome"
+        }
+      ],
+      "source_bullets": [
+        {
+          "id": "v1-p5-b1",
+          "text": "Built a Spring Boot API for simulated UPI payments with account management, transfers and transaction history, secured with JWT.",
+          "source_text": "Engineered a Spring Boot REST API simulating a UPI payments backend with account management, fund transfers, and transaction history endpoints; secured with JWT-based authentication."
+        },
+        {
+          "id": "v1-p5-b2",
+          "text": "Used MySQL transactions and optimistic locking to prevent concurrent double-spend races; validated with JUnit integration tests.",
+          "source_text": "Implemented optimistic locking and DB transactions in MySQL to prevent double-spend race conditions under concurrent transfer requests; validated with JUnit integration tests."
+        },
+        {
+          "id": "v1-p5-b3",
+          "text": "Applied Controller/Service/Repository layers, DTO validation, global exception handling and OpenAPI documentation.",
+          "source_text": "Structured using layered architecture (Controller -> Service -> Repository) with DTO validation, global exception handling, and Swagger/OpenAPI documentation for all endpoints."
+        }
+      ],
+      "metric_kind": "missing",
+      "metric_bullet_ids": [],
+      "metric_note": "No numerical outcome measurement supplied. Correctness outcomes are retained; add real benchmarks when available."
+    },
+    {
+      "id": "p6",
+      "title": "RideWise -- Ride-Hailing LLD",
+      "technologies": "Java, SOLID Principles, Strategy Pattern, OOP",
+      "dates": "2025",
+      "bullets": [
+        {
+          "id": "v1-p6-b1",
+          "text": "Designed a ride-hailing system to manage driver matching, fare calculation and ride lifecycles.",
+          "kind": "problem"
+        },
+        {
+          "id": "v1-p6-b2",
+          "text": "Applied Java, SOLID principles, Strategy-based pricing and Factory-based ride creation.",
+          "kind": "implementation"
+        },
+        {
+          "id": "v1-p6-b3",
+          "text": "Supported base, surge and premium fare strategies with extensible pricing behavior.",
+          "kind": "outcome"
+        }
+      ],
+      "source_bullets": [
+        {
+          "id": "v1-p6-b1",
+          "text": "Designed a low-level object-oriented system for a ride-hailing platform covering driver matching, fare calculation, and ride lifecycle management using SOLID principles."
+        },
+        {
+          "id": "v1-p6-b2",
+          "text": "Applied Strategy pattern for pluggable fare strategies (base, surge, premium) and Factory pattern for ride-type creation; structured for extensibility without modifying existing classes."
+        }
+      ],
+      "metric_kind": "missing",
+      "metric_bullet_ids": [],
+      "metric_note": "No numerical outcome measurement supplied. Correctness outcomes are retained; add real benchmarks when available."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": "Java, Python, SQL, Scala, C++, JavaScript"
+    },
+    {
+      "category": "Backend & systems",
+      "items": "Spring Boot, REST APIs, Microservices, Distributed Systems, Akka, gRPC, Event-Driven Architecture"
+    },
+    {
+      "category": "Data & databases",
+      "items": "BigQuery, Apache Airflow, Apache Kafka, ETL, MySQL, DynamoDB, NoSQL"
+    },
+    {
+      "category": "Analytics",
+      "items": "Fraud Analytics, Anomaly Detection, Data Validation, Looker Studio"
+    },
+    {
+      "category": "Cloud & tools",
+      "items": "AWS (Lambda, S3, CloudWatch, Lex), GCP, Docker, Git, Azure"
+    },
+    {
+      "category": "Testing & practices",
+      "items": "JUnit, Playwright, Cypress, SOAP, Cucumber, CI/CD, Agile/Scrum, Root-Cause Analysis, Monitoring, Cross-Functional Collaboration"
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Teaching Assistant, Operating Systems & Algorithms - BITS Pilani",
+      "dates": "Sep 2024 -- Dec 2025"
+    },
+    {
+      "title": "Junior Placement Coordinator - BITS Pilani, Hyderabad",
+      "dates": "Aug 2024 -- Dec 2024"
+    }
+  ],
+  "review_notes": [
+    "Review the selected bullets for relevance to each application and keep the profile current.",
+    "Confirm the exact IIT Madras Foundation credential wording and current degree/CGPA details before submitting.",
+    "Skills and project claims come from the supplied resumes. Include only work and tools you can explain in an interview.",
+    "Redwood currently has quantified scope (5 architecture layers), not a measured impact result. Add a real result when available."
+  ],
+  "default_project_bullets": {
+    "p1": [
+      "v1-p1-b1",
+      "v1-p1-b2",
+      "v1-p1-b3"
+    ],
+    "p2": [
+      "v1-p2-b1",
+      "v1-p2-b2",
+      "v1-p2-b3"
+    ],
+    "p3": [
+      "v1-p3-b1",
+      "v1-p3-b2",
+      "v1-p3-b3"
+    ],
+    "p4": [
+      "v1-p4-b1",
+      "v1-p4-b2",
+      "v1-p4-b3"
+    ],
+    "p5": [
+      "v1-p5-b1",
+      "v1-p5-b2",
+      "v1-p5-b3"
+    ],
+    "p6": [
+      "v1-p6-b1",
+      "v1-p6-b2",
+      "v1-p6-b3"
+    ]
+  },
+  "default_projects": [
+    "p5",
+    "p4"
+  ],
+  "default_experience_bullets": {
+    "e1": [
+      "v1-e1-b1",
+      "v1-e1-b2",
+      "v1-e1-b3"
+    ],
+    "e2": [
+      "v1-e2-b1",
+      "v1-e2-b2",
+      "v1-e2-b3"
+    ],
+    "e3": [
+      "v1-e3-b1",
+      "v1-e3-b2",
+      "v1-e3-b3"
+    ]
+  },
+  "confirmed_facts": [
+    "User confirmed HSBC: Jan-Jul 2026; Redwood: Aug 2026-Present; Codinoverse: Feb-Apr 2024.",
+    "User confirmed both HSBC achievement sets are accurate; both are available in the master profile."
+  ]
+}

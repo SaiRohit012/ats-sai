@@ -1,0 +1,189 @@
+\documentclass[letterpaper,10.5pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2.5pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \small #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & \small #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]\vspace{-2pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+  {\LARGE \textbf{SAI ROHIT SHAIK}} \\[2pt]
+  \small +91-6301411795 \;$\cdot$\;
+  \href{mailto:h20240158@hyderabad.bits-pilani.ac.in}{h20240158@hyderabad.bits-pilani.ac.in} \;$\cdot$\;
+  \href{https://linkedin.com/in/sk-sai-rohit}{linkedin.com/in/sk-sai-rohit} \;$\cdot$\;
+  Hyderabad / Bengaluru, India
+\end{center}
+\vspace{-10pt}
+
+%---------- SUMMARY ----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.12in, label={}]
+\small{\item{
+Analyst with experience in \textbf{SQL, Python, and Google BigQuery} for \textbf{fraud analytics}, \textbf{ETL pipeline} engineering, and \textbf{financial data analysis}. Proven track record of cross-functional insight delivery and \textbf{system observability} improvements in \textbf{Agile/Scrum} environments; experienced in \textbf{distributed systems}, \textbf{REST APIs}, and \textbf{anomaly detection} at HSBC.
+}}
+\end{itemize}\vspace{-10pt}
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {BITS Pilani, Hyderabad Campus}{2024 -- 2026}
+    {M.E. Computer Science}{CGPA: 8.53}
+  \resumeSubheading
+    {IIT Madras}{2022 -- 2024}
+    {Foundation in Data Science and Programming}{CGPA: 5.75}
+  \resumeSubheading
+    {Sharda University}{2020 -- 2024}
+    {B.Tech. Computer Science Engineering}{CGPA: 7.97}
+\resumeSubHeadingListEnd\vspace{-4pt}
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  %---------- REDWOOD ----------
+  \resumeSubheading
+    {Redwood Software Pvt. Ltd. \textnormal{$|$ Software Engineer}}{India}
+    {Java $\cdot$ Spring Boot $\cdot$ Playwright $\cdot$ Cypress $\cdot$ SOAP $\cdot$ Cucumber}{Aug 2026 -- Present}
+  \resumeItemListStart
+    \resumeItem{Contributing to \textbf{Tidal Workload Automation}, working across its \textbf{5-layer distributed architecture} -- Client, Manager, Master, Agent, and Adapter -- for feature development and core component engineering.}
+    \resumeItem{Developing and enhancing \textbf{Java/Spring Boot components} for the \textbf{2027.1 release}, working across core services and distributed job-execution workflows while maintaining compatibility with existing enterprise functionality.}
+    \resumeItem{Engineering \textbf{end-to-end test automation} using \textbf{Playwright, Cypress, SOAP, and Cucumber}, covering UI, service, integration, and workload-execution scenarios across multiple Tidal components.}
+    \resumeItem{Driving \textbf{product sustainability and defect resolution} through cross-component debugging, root-cause analysis, and regression validation while shadowing the \textbf{2026.4 release} and transitioning ownership toward \textbf{2027.1}.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HSBC \textnormal{$|$ Analyst Intern -- UK Fraud Analytics}}{India}
+    {Python $\cdot$ SQL $\cdot$ Google BigQuery $\cdot$ Agile/Scrum}{Jan 2026 -- Present}
+  \resumeItemListStart
+    \resumeItem{Evaluated vendor fraud scores across \textbf{3+ fraud typologies} using \textbf{complex SQL on BigQuery}; delivered analytical report confirming \textbf{0\% incremental lift}, preventing an estimated \textbf{\$200K+ misdirected investment} in the UK Cards portfolio.}
+    \resumeItem{Validated fraud reduction claims via \textbf{multi-join SQL} across \textbf{5M+ transactions}; built \textbf{KPI baselines} enabling rigorous \textbf{before-vs-after impact measurement} across authentication and \textbf{fraud metrics}.}
+    \resumeItem{Built \textbf{Python ML text classification pipeline} using topic modelling to auto-categorize \textbf{10K+ monthly complaints}, targeting \textbf{60\%+ reduction in manual triaging} and improving \textbf{regulatory reporting} accuracy.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Codinoverse \textnormal{$|$ Software Engineer Intern -- Backend \& Distributed Systems}}{India}
+    {Java $\cdot$ Scala $\cdot$ Akka $\cdot$ Apache Kafka $\cdot$ REST APIs $\cdot$ JUnit}{Feb 2024 -- Apr 2024}
+  \resumeItemListStart
+    \resumeItem{Architected \textbf{5+ distributed microservices} in \textbf{Java, Scala, and Akka} with \textbf{$>$90\% unit test coverage}; applied OOP design patterns for a scalable, production-ready service foundation.}
+    \resumeItem{Built \textbf{event-driven pipelines} using \textbf{Apache Kafka} with \textbf{REST API} integration; enhanced \textbf{root-cause analysis} capabilities, reducing mean-time-to-detect incidents by an estimated \textbf{40\%}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+%---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Financial Fraud Signal Dashboard} $|$ \emph{Python, BigQuery, SQL, Airflow, GCP, Looker Studio}}{Jan -- Mar 2025}
+  \resumeItemListStart
+    \resumeItem{Designed an \textbf{end-to-end fraud analytics pipeline} surfacing real-time \textbf{anomalies} from large-scale operational datasets, enabling faster \textbf{risk and compliance} decisions across business units.}
+    \resumeItem{Implemented using \textbf{Python + Apache Airflow} for \textbf{ETL orchestration}, \textbf{BigQuery} for complex joins and aggregations, and \textbf{Looker Studio} for KPI dashboards with \textbf{GCP monitoring} for \textbf{observability}.}
+    \resumeItem{Reduced \textbf{anomaly detection latency by 45\%}; dashboards adopted by \textbf{3 cross-functional teams} with \textbf{data validation} coverage improved to \textbf{$>$95\%} across all pipeline stages.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{CampusBuddy -- Scalable Cloud Chatbot} $|$ \emph{Java, AWS Lambda, DynamoDB, CloudWatch, Amazon Lex}}{Feb -- Mar 2025}
+  \resumeItemListStart
+    \resumeItem{Engineered a \textbf{serverless backend} on \textbf{AWS Lambda + DynamoDB} handling high-concurrency sessions via \textbf{REST API} and JWT auth; integrated \textbf{microservices architecture} with 3-language NLP via Amazon Lex.}
+    \resumeItem{Deployed \textbf{CloudWatch monitoring and alerting} for \textbf{production observability}; achieved \textbf{$<$200ms latency}, zero cold-start failures, and \textbf{30\% reduction in operational overhead} through \textbf{process optimization}.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Distributed Task Scheduler} $|$ \emph{C++, POSIX Threads, Mutexes, Futures/Promises}}{Aug -- Sep 2024}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{C++ concurrent task scheduling library} over a dynamic worker thread pool; implemented \textbf{priority-based scheduling} with async execution via \textbf{futures/promises} and thread safety via \textbf{mutexes}.}
+    \resumeItem{Enabled \textbf{dynamic thread pool resizing} and task cancellation; achieved \textbf{zero race conditions} at full load and improved estimated throughput by \textbf{35\%} -- validating \textbf{scalable distributed systems} design.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Distributed Key-Value Store} $|$ \emph{Java, gRPC, Consistent Hashing, Docker Compose}}{2025}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{distributed key-value store} in Java implementing a \textbf{consistent hash ring} for data partitioning across nodes; supports \textbf{quorum-based replication} (read/write quorums) for fault tolerance.}
+    \resumeItem{Designed \textbf{gRPC-based inter-node communication} with a \textbf{gossip protocol} for membership and failure detection; containerised the full cluster using \textbf{Docker Compose} for local multi-node testing.}
+    \resumeItem{Validated correctness under \textbf{node failure scenarios} -- data remains accessible as long as quorum is maintained; documented replication lag and recovery behaviour in the README.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{PayFlow -- UPI-Style Payments Backend} $|$ \emph{Java, Spring Boot, MySQL, REST APIs, JWT}}{2025}
+  \resumeItemListStart
+    \resumeItem{Engineered a \textbf{Spring Boot REST API} simulating a UPI payments backend with \textbf{account management, fund transfers, and transaction history} endpoints; secured with \textbf{JWT-based authentication}.}
+    \resumeItem{Implemented \textbf{optimistic locking and DB transactions} in \textbf{MySQL} to prevent double-spend race conditions under concurrent transfer requests; validated with \textbf{JUnit integration tests}.}
+    \resumeItem{Structured using \textbf{layered architecture} (Controller -> Service -> Repository) with \textbf{DTO validation, global exception handling}, and Swagger/OpenAPI documentation for all endpoints.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{RideWise -- Ride-Hailing LLD} $|$ \emph{Java, SOLID Principles, Strategy Pattern, OOP}}{2025}
+  \resumeItemListStart
+    \resumeItem{Designed a \textbf{low-level object-oriented system} for a ride-hailing platform covering \textbf{driver matching, fare calculation, and ride lifecycle management} using \textbf{SOLID principles}.}
+    \resumeItem{Applied \textbf{Strategy pattern} for pluggable fare strategies (base, surge, premium) and \textbf{Factory pattern} for ride-type creation; structured for extensibility without modifying existing classes.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.12in, label={}]
+\small{\item{
+\textbf{Languages:} Python, Java, SQL, Scala, C++, JavaScript \\[0.5pt]
+\textbf{Data \& Analytics:} Google BigQuery, Apache Airflow, ETL Pipelines, Apache Kafka, Anomaly Detection, Data Validation, MySQL, DynamoDB, NoSQL \\[0.5pt]
+\textbf{Systems \& Backend:} Microservices, REST APIs, Event-Driven Architecture, Distributed Systems, Akka, Spring Boot \\[0.5pt]
+\textbf{Cloud \& Observability:} AWS (Lambda, DynamoDB, S3, CloudWatch), GCP (BigQuery, Looker Studio), Azure, Docker \\[0.5pt]
+\textbf{Engineering Practices:} Agile/Scrum, Root-Cause Analysis, System Observability, Cross-Functional Collaboration, CI/CD, Git
+}}
+\end{itemize}\vspace{-4pt}
+
+%---------- POSITIONS OF RESPONSIBILITY ----------
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{Teaching Assistant} $|$ \textnormal{BITS Pilani -- Operating Systems \& Algorithms}}{Sep 2024 -- Dec 2025}
+  \resumeProjectHeading{\textbf{Junior Placement Coordinator} $|$ \textnormal{BITS Pilani, Hyderabad}}{Aug 2024 -- Dec 2024}
+\resumeSubHeadingListEnd
+
+\end{document}

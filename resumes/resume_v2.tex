@@ -1,0 +1,85 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[left=0.6in,right=0.6in,top=0.6in,bottom=0.55in]{geometry}
+\ifdefined\XeTeXversion
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=NoCommon,Kerning=Off}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf,ItalicFont=lmsans10-oblique.otf,BoldItalicFont=lmsans10-boldoblique.otf]
+\else
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\fi
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\ifdefined\pdfgentounicode
+\input{glyphtounicode}
+\pdfgentounicode=1
+\fi
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\raggedbottom
+\urlstyle{same}
+\titleformat{\section}{\fontsize{11.5}{14}\selectfont\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=13pt,label=\textbullet,itemsep=2pt,topsep=3pt,parsep=0pt,partopsep=0pt}
+\newcommand{\entry}[3]{\par\addvspace{4pt}\Needspace{5\baselineskip}\textbf{#1}\hfill #2\par\nopagebreak[4]{\itshape #3}\par\nopagebreak[4]}
+\newcommand{\project}[2]{\par\addvspace{4pt}\Needspace{4\baselineskip}\textbf{#1}\hfill #2\par\nopagebreak[4]}
+\renewcommand{\familydefault}{\sfdefault}
+\begin{document}
+\fontsize{10.5}{13}\selectfont
+
+{\centering {\fontsize{21}{24}\selectfont\bfseries SAI ROHIT SHAIK}\par\vspace{5pt}
++91-6301411795 | sai.rohit.shaik@gmail.com | Hyderabad, India\par\vspace{2pt}
+linkedin.com/in/sk-sai-rohit | \href{https://github.com/sairohitsk}{github.com/sairohitsk}\par}
+\section{Education}
+\Needspace{3\baselineskip}\textbf{BITS Pilani, Hyderabad Campus}\hfill 2024 -- 2026\par\nopagebreak[4]
+M.E. Computer Science | CGPA: 8.53\par\addvspace{2pt}
+\Needspace{3\baselineskip}\textbf{IIT Madras}\hfill 2022 -- 2024\par\nopagebreak[4]
+Foundation in Data Science and Programming | CGPA: 5.75\par\addvspace{2pt}
+\Needspace{3\baselineskip}\textbf{Sharda University}\hfill 2020 -- 2024\par\nopagebreak[4]
+B.Tech. Computer Science Engineering | CGPA: 7.97\par\addvspace{2pt}
+\section{Technical Skills}
+\textbf{Languages:} Java, Python, SQL, Scala, C, C++\par\addvspace{2pt}
+\textbf{Backend \& systems:} Spring Boot, REST APIs, Microservices, Distributed Systems, Akka, gRPC, Event-Driven Architecture\par\addvspace{2pt}
+\textbf{Data \& databases:} BigQuery, Apache Airflow, Apache Kafka, ETL, MySQL, DynamoDB, NoSQL, Oracle\par\addvspace{2pt}
+\textbf{Analytics:} Fraud Analytics, Anomaly Detection, Data Validation, Looker Studio, Machine Learning, Scikit-learn, NLP, Predictive Modeling\par\addvspace{2pt}
+\textbf{Cloud \& tools:} AWS (Lambda, S3, CloudWatch, Lex), GCP, Docker, Git\par\addvspace{2pt}
+\textbf{Testing \& practices:} JUnit, Playwright, Cypress, SOAP, Cucumber, CI/CD, Agile/Scrum, Root-Cause Analysis, Monitoring, Cross-Functional Collaboration\par\addvspace{2pt}
+\section{Experience}
+\entry{Redwood Software Pvt. Ltd.}{Aug 2026 -- Present}{Software Engineer | India}
+\begin{itemize}
+\item Develop Java/Spring Boot components for Tidal's 5-layer architecture, supporting distributed job execution.
+\item Automate UI, service, integration and workload tests using Playwright, Cypress, SOAP and Cucumber.
+\item Resolve cross-component defects with root-cause analysis and regression tests for the 2027.1 release.
+\end{itemize}
+\entry{HSBC}{Jan 2026 -- Jul 2026}{Analyst Intern - Fraud Analytics | India}
+\begin{itemize}
+\item Developed Python/Scikit-learn fraud-classification models for vendor scoring and complaint triage, improving risk-identification accuracy by 18\%.
+\item Analyzed fraud data with BigQuery SQL and investigated 15+ production incidents through root-cause analysis.
+\item Automated data-validation pipelines, reducing manual effort by 40\% across fraud-analytics workflows.
+\end{itemize}
+\entry{Codinoverse}{Feb 2024 -- Apr 2024}{Software Engineer Intern - Backend Systems | India}
+\begin{itemize}
+\item Built event-driven Java/Scala microservices to improve backend scalability and fault tolerance.
+\item Connected Kafka event pipelines and REST APIs to support real-time data processing.
+\item Optimized backend APIs and services, reducing response latency by 30\%.
+\end{itemize}
+\section{Projects}
+\entry{PayFlow -- UPI-Style Payments Backend}{2025}{Java, Spring Boot, MySQL, REST APIs, JWT, JUnit}
+\begin{itemize}
+\item Built a simulated UPI backend to manage accounts, transfers and transaction history.
+\item Implemented Spring Boot APIs with JWT security, MySQL transactions and optimistic locking.
+\item Validated concurrent transfers with JUnit integration tests to prevent double-spend races.
+\end{itemize}
+\entry{Distributed Key-Value Store}{2025}{Java, gRPC, Consistent Hashing, Docker Compose}
+\begin{itemize}
+\item Built a distributed key-value store to preserve data availability during node failures.
+\item Implemented Java/gRPC services with consistent hashing, quorum replication and gossip-based failure detection.
+\item Validated data availability under node failures while quorum held; documented replication lag and recovery behavior in the README.
+\end{itemize}
+\end{document}
