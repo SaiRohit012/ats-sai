@@ -184,6 +184,26 @@ def parse_llm_output(raw: str, profile: dict, pages: int = 2) -> dict:
     return result
 
 
+# Free-model ranking. Substring -> weight; higher is tried first. Free IDs churn, so
+# nothing is hardcoded: the live catalog is fetched and ranked by these hints.
+# Coding/instruction-following MoE models rank above small, omni or niche models.
+MODEL_PRIORITY_HINTS = [
+    ('qwen3-coder',100),('coder',40),('deepseek',88),('glm',80),('kimi',78),('mimo',76),
+    ('laguna-m',92),('laguna',85),('nemotron-3-ultra',90),('nemotron',70),('hy3',75),
+    ('gpt-oss',68),('llama-3.3-70b',60),('llama',50),('gemma',45),('code',25),
+    ('omni',-40),('small',-15),('mini',-15),('vl',-30),
+]
+# Reasoning-heavy models can spend the whole token budget on hidden thinking and
+# return nothing; ask these not to reason.
+NO_THINKING_SUBSTRINGS = ('deepseek','hy3','nemotron')
+MAX_MODEL_ATTEMPTS = 6
+
+
+def model_priority(model_id: str) -> int:
+    low = model_id.lower()
+    return sum(w for sub,w in MODEL_PRIORITY_HINTS if sub in low)
+
+
 def fetch_free_models(timeout: int = 15) -> list[dict]:
     try:
         response = requests.get(BASE_URL+'/models', timeout=timeout)
@@ -208,7 +228,18 @@ def fetch_free_models(timeout: int = 15) -> list[dict]:
                 models.append({'id':model_id,'context_length':context})
         except (ValueError, TypeError, AttributeError): continue
     if not models: raise CatalogError('The catalog has no eligible free text models right now.')
-    return sorted(models,key=lambda m:(-m['context_length'],m['id']))
+    return sorted(models,key=lambda m:(-model_priority(m['id']),-m['context_length'],m['id']))
+
+
+def provider_error(resp) -> str:
+    """Short, single-line provider explanation so a bare 403 is diagnosable."""
+    try:
+        err = resp.json().get('error')
+        msg = err.get('message') if isinstance(err,dict) else err
+    except (ValueError, AttributeError, TypeError):
+        msg = None
+    msg = str(msg or getattr(resp,'text','') or '').replace('\n',' ').strip()
+    return ('('+msg[:160]+')') if msg else ''
 
 
 def retry_seconds(value):
@@ -234,7 +265,7 @@ def run_optimization(profile: dict, jd: str, api_key: str, model: str,
     if not api_key.strip(): raise InvalidAPIKeyError('Enter an OpenRouter API key.')
     # Revalidate cost at click-time. A cached catalog is only for the model picker.
     catalog = {m['id']: m for m in fetch_free_models()}
-    candidates = list(dict.fromkeys([model]+(fallback_models or [])))[:3]
+    candidates = list(dict.fromkeys([model]+(fallback_models or [])))[:MAX_MODEL_ATTEMPTS]
     candidates = [m for m in candidates if m in catalog]
     if not candidates: raise CatalogError('Selected models are no longer eligible for free calls. Refresh the list.')
     # Contact details stay local; no need for the provider to receive them.
@@ -251,8 +282,9 @@ def run_optimization(profile: dict, jd: str, api_key: str, model: str,
         for repair in range(2):
             attempts.append(candidate)
             try:
-                resp = requests.post(BASE_URL+'/chat/completions',headers=headers,
-                    json={'model':candidate,'messages':messages,'max_tokens':6000},timeout=(10,75))
+                body = {'model':candidate,'messages':messages,'max_tokens':6000,'temperature':0.2}
+                if any(t in candidate.lower() for t in NO_THINKING_SUBSTRINGS): body['reasoning'] = {'enabled':False}
+                resp = requests.post(BASE_URL+'/chat/completions',headers=headers,json=body,timeout=(10,75))
             except requests.RequestException:
                 errors.append(candidate+': connection failure'); break
             if resp.status_code == 401: raise InvalidAPIKeyError('OpenRouter rejected the API key (401).')
@@ -260,7 +292,7 @@ def run_optimization(profile: dict, jd: str, api_key: str, model: str,
                 rate_waits.append(retry_seconds(resp.headers.get('Retry-After')))
                 errors.append(candidate+': rate limited'); break
             if resp.status_code >= 400:
-                errors.append(candidate+f': HTTP {resp.status_code}'); break
+                errors.append(candidate+f': HTTP {resp.status_code} {provider_error(resp)}'); break
             try:
                 data = resp.json()
                 choice = data['choices'][0]
