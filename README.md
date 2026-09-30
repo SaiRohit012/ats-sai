@@ -43,7 +43,7 @@ All three roles, all education, skills and contact details remain protected. Eac
 - The app previews every PDF page, extracts its text, checks page count, flags compiler overflow, and checks protected content and missing words. It never declares a one-page fit without measuring it.
 - A one-page target may overflow with your full education/skills and long source bullets. The app reports that honestly; select fewer projects or review concise rewrites while retaining three bullets per entry. It does not hide qualifications or shrink the text to force a fit.
 - Model prices are checked against the live catalog at request time. Catalog failure stops the call instead of using unverified stale model IDs. Models are sorted by context capacity, not an asserted quality ranking.
-- At most three models and one format-repair call per model are attempted. Authentication failures fail immediately, including during repair. Rate limits retain `Retry-After`; mixed failures are not mislabeled as all-rate-limited.
+- Free models are ranked by a coding/instruction-following heuristic (then context size). Up to six are tried automatically, each with one format-repair call. Known reasoning-heavy models are called with reasoning disabled, and provider error messages (for example on HTTP 403) are shown. Authentication failures fail immediately, including during repair. Rate limits retain `Retry-After`; mixed failures are not mislabeled as all-rate-limited.
 - History retains immutable source/JD/result snapshots. Editing a different resume or job description does not silently change an earlier result's diff or coverage.
 - PDF compilation happens only on build, retry, or applying reviewed wording; tab interactions reuse the saved result.
 
