@@ -48,7 +48,7 @@ with st.sidebar:
     models = st.session_state.models
     selected_model = st.selectbox('Free model',[m['id'] for m in models],index=0 if models else None,
                                   placeholder='Refresh to load the live catalog')
-    st.caption('Sorted by context capacity, which is not a quality rating. Pricing is rechecked at run time.')
+    st.caption('Ranked by a coding/instruction-following heuristic, then context size; not a verified quality rating. Up to 6 models are tried automatically. Pricing is rechecked at run time.')
     suggest_project = st.checkbox('Suggest an unbuilt project for gaps',value=False)
     if st.session_state.history:
         st.subheader('Session history')
@@ -114,7 +114,7 @@ with c2:
         try:
             with st.spinner('Selecting relevant evidence and proposing edits. Provider calls have bounded timeouts…'):
                 result = core.run_optimization(profile,jd,api_key,selected_model,pages,suggest_project,
-                                               [m['id'] for m in models if m['id']!=selected_model][:2])
+                                               [m['id'] for m in models if m['id']!=selected_model][:core.MAX_MODEL_ATTEMPTS-1])
             save_run(profile,result.plan['selection'],pages,jd,result.plan,result.used_model)
             st.rerun()
         except core.RateLimitedError as e:
